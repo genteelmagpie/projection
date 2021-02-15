@@ -1,0 +1,264 @@
+ 
+/*
+
+    The Main Colors are : Heading - azure, Navbar  - antiquewhite,
+    Paragraph - #E0F0FF, 
+    Contrast Colors For Background - #4E6B6C (Dark TITLE ONLY), #53787A (Dark Rest of the body), #83A7A8 (Light) & Previous Light was #90B6B7.
+
+*/
+
+/*HTML Elements Styles Start*/
+
+body, h1, h2, h3, h4, h5, h6 {
+    color: azure;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+p{
+    color:#E0F0FF;
+}
+
+
+a:hover{
+    color: #D3CFA9;
+}
+
+ 
+/*HTML Elements Styles End*/
+
+/*Navigation Bar Styles START*/
+
+.navbar{
+    padding: 0 0 4%;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(230,232,253,1.00)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #F0FFFF;
+} 
+
+.navbar-brand{            /* Provides Style To Targeted Brand in Navigation */
+    color: antiquewhite;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.nav-item{
+    padding: 0 18px;  /* Provides Padding to Navigation Items */
+    
+}
+.nav-link{
+    color:antiquewhite ;
+    font-size: 1.5rem;
+    font-weight: light;
+}
+
+/*Navigation Bar Styles END*/
+
+/*Title Section Style START*/
+
+#title{
+    background-color: #4E6B6C;   /* 719192, 4E6B6C */
+}
+
+.thetagline{
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.theintroline{
+    font-weight: 500;
+    line-height: 1.2;
+}
+.container-fluid{
+    padding: 2% 12% 7% 12%;
+}
+.download-button{
+    margin:2% 1% 3% 1%;
+}
+.title-image{
+    width: 50%;
+    transform: rotate(5deg);
+    margin: 0% 0 0% 40%;
+    position: absolute;  
+    border-radius: 5%;
+}
+
+/*Title Section Style END*/
+
+/*Features Section Style START*/
+
+#features{
+    padding: 5% 12%;
+    background-color: #83A7A8;  /*  90B6B7 Backup */
+    position: relative;
+/*    z-index: 1;*/
+}
+.feature-box{
+    text-align: center;
+    padding: 0 7%;
+}
+
+.icon{
+    color: #488C90;  /*  8DE0E5*/
+}
+.icon:hover{
+    color: #4E6B6C;
+}
+.fcaption{
+
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/*Features Section Style END*/
+/*Testmonials Section Style START*/
+
+#testimonials{
+    text-align: center;
+    background-color: #53787A;
+    
+}
+.testiminials-heading{
+    font-size: 2rem;
+}
+.caption-giver{
+    font-size: 1.3rem;
+}
+.book-cover{
+    width: 500px;
+    height: 728px;
+    border-radius: 25px;
+}
+.carousel-item{
+        padding: 4% 10%;
+}
+/*Testmonials Section Style End*/
+/*Press Section Style START*/
+
+#press{
+    background-color: #53787A;    /* Only Light Color Background */
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width: 9%;
+    margin: 20px 20px 20px;
+}
+/*Press Section Style END*/
+/*Pricing Section Style START*/
+.card{
+    background-color: #488C90;
+}
+#pricing{
+    padding: 4% 12%;
+    background-color: #83A7A8;
+    text-align: center;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+.pricing-heading{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.pricing-detail{
+    font-size: 1.2rem;
+}
+.edtbtn{
+    border-color: white;
+}
+.edtbtn:hover{
+    background-color: #4E6B6C;
+    
+}
+/*Pricing Section Style END*/
+/*Call To Action (CTA) Section Style START*/
+
+#cta{
+    padding: 3% 20%;
+    background-color: #53787A;
+    text-align: center;
+}
+.cta-heading{
+/*    font-family: 'IBM Plex Serif', serif;*/
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+.cta-button{
+    margin:2% 1% 0% 1%;
+}
+/*Call To Action (CTA) Section Style START*/
+/*Footer Section Style START*/
+
+#footer{
+    padding: 2% 12% 1% 12%;
+    text-align: center;
+    background-color: #4F7376;
+}
+.social-icon{
+    margin: 0 12px;
+}
+.copyright-footer{
+    margin-top: 20px;
+}
+
+/*Footer Section Style END*/
+/* Media Query For Responsive Websites Style START*/
+
+@media (max-width: 1024px){
+    
+    #title{
+        text-align: center;
+    }
+    .book-cover{
+    width: 400px;
+    height: 582px;
+    border-radius: 25px;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        margin: 0%;
+    }
+    .navbar-brand{   
+    margin: 0 auto;  /* Provides Style To Targeted Brand in Navigation */
+    color: antiquewhite;
+    font-size: 3rem;
+    font-weight: 500;
+    }
+    .navbar-toggler{
+/*        margin: 0 auto;*/
+    }
+}
+@media (max-width: 544px){
+    #title{
+    text-align: center;
+    }
+    .book-cover{
+    width: 400px;
+    height: 582px;
+    border-radius: 25px;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        margin: 0%;
+    }
+    .navbar-brand{   
+    margin: 0 auto;  /* Provides Style To Targeted Brand in Navigation */
+    color: antiquewhite;
+    font-size: 3rem;
+    font-weight: 500;
+    }
+    .navbar-toggler{
+        margin: 0 auto;
+    }
+}
+
+
+/* Media Query For Responsive Websites Style END*/
